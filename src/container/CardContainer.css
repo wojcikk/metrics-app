@@ -1,0 +1,36 @@
+* {
+    background-color: black;
+}
+
+.metrics-container {
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card {
+    color: white;
+    margin: 10px 30px;
+    text-align: center;
+
+    background-color: rgb(8, 8, 8);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h4, p {
+    background-color: rgb(8, 8, 8);
+    margin: 20px 40px;
+}
+
+.metrics-label {
+    color: white;
+    margin: 10px 30px -20px 30px;
+    padding: 10px;
+    text-align: center;
+}

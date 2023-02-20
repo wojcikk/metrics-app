@@ -1,24 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import PlainData from './PlainData';
+import PlainData from './data/PlainData';
 import './index.css';
 
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import reportWebVitals from './reportWebVitals';
+import ResultCard from './card/ResultCard';
+import CardContainer from './container/CardContainer';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <HelloWorld /> */}
-    <PlainData />
+
+    <CardContainer />
+    
+
+    {/* <ResultCard 
+    id= {0}
+    variableName= {"pierwsze"}
+    fullVariablePath= {"pierwsze"}
+    calculationResult= {1}
+     /> */}
+
+     {/* <PlainData /> */}
   </React.StrictMode>
 );
 
@@ -26,3 +37,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+

@@ -1,0 +1,72 @@
+# HELP application_httprequests_apdex 
+# TYPE application_httprequests_apdex gauge
+application_httprequests_apdex{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 1
+
+# HELP application_httprequests_active 
+# TYPE application_httprequests_active counter
+application_httprequests_active{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 1
+
+
+// jak szybko wykonywane są zapytania o metryki
+# HELP application_httprequests_transactions 
+# TYPE application_httprequests_transactions summary
+application_httprequests_transactions_sum{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 7.9814191
+application_httprequests_transactions_count{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 10780
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.5"} 0.0002772
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.75"} 0.0006979
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.95"} 0.0008623999999999999
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.99"} 0.0008623999999999999
+
+//ile urządzeń trzeba przeliczyć podczas tego jednego cyklu 
+# HELP avm_essk_calculations_devices_to_process 
+# TYPE avm_essk_calculations_devices_to_process gauge
+avm_essk_calculations_devices_to_process{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 10978
+
+//ile urządzeń trzeba zsynchronizować (pobrać konfigurację) podczas tego jednego cyklu 
+# HELP avm_essk_calculations_devices_to_synchronization 
+# TYPE avm_essk_calculations_devices_to_synchronization gauge
+avm_essk_calculations_devices_to_synchronization{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 10
+
+//ilość getów wysłanych podczas tego jednego cyklu 
+# HELP avm_essk_calculations_get_requests_counter 
+# TYPE avm_essk_calculations_get_requests_counter gauge
+avm_essk_calculations_get_requests_counter{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 24420
+
+//ilość postów wysłanych podczas tego jednego cyklu 
+# HELP avm_essk_calculations_post_requests_counter 
+# TYPE avm_essk_calculations_post_requests_counter gauge
+avm_essk_calculations_post_requests_counter{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 412
+
+//ile czasu trwało liczenie podczas tego jednego cyklu (ms)
+# HELP avm_essk_calculations_process_time 
+# TYPE avm_essk_calculations_process_time gauge
+avm_essk_calculations_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 85367
+
+//ile czasu trwała synchronizacja (pobieranie konfiguracji) podczas tego jednego cyklu 
+# HELP avm_essk_calculations_synchronization_time 
+# TYPE avm_essk_calculations_synchronization_time gauge
+avm_essk_calculations_synchronization_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 645
+
+//ile czasu trwało wszystko podczas tego jednego cyklu 
+# HELP avm_essk_calculations_total_execultion_time 
+# TYPE avm_essk_calculations_total_execultion_time gauge
+avm_essk_calculations_total_execultion_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 86543
+
+//ilość cykli od startu modułu kalkulacji
+# HELP avm_essk_calculations_calculations_counter 
+# TYPE avm_essk_calculations_calculations_counter counter
+avm_essk_calculations_calculations_counter{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 2
+
+# HELP avm_essk_calculations_one_device_process_time 
+# TYPE avm_essk_calculations_one_device_process_time histogram
+avm_essk_calculations_one_device_process_time_sum{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 139486
+//ilość urządzeń przeliczonych podczas tego cyklu
+avm_essk_calculations_one_device_process_time_count{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 407
+//czas w ms w jaki przetwarzane jest 50% przeliczonych urządzeń
+avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.5"} 51
+avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.75"} 79
+avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.95"} 191
+avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.99"} 29469
+
+
+avm_essk_calculations_one_device_process_time_sum/avm_essk_calculations_one_device_process_time_count = średni czas na urządzenie
