@@ -4,7 +4,6 @@ class QueryConfigMetric {
     private _env!: string; 
 
 
-    
     public get server(): string {
         return this._server;
     }

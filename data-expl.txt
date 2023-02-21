@@ -1,21 +1,3 @@
-# HELP application_httprequests_apdex 
-# TYPE application_httprequests_apdex gauge
-application_httprequests_apdex{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 1
-
-# HELP application_httprequests_active 
-# TYPE application_httprequests_active counter
-application_httprequests_active{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 1
-
-
-// jak szybko wykonywane są zapytania o metryki
-# HELP application_httprequests_transactions 
-# TYPE application_httprequests_transactions summary
-application_httprequests_transactions_sum{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 7.9814191
-application_httprequests_transactions_count{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 10780
-application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.5"} 0.0002772
-application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.75"} 0.0006979
-application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.95"} 0.0008623999999999999
-application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.99"} 0.0008623999999999999
 
 //ile urządzeń trzeba przeliczyć podczas tego jednego cyklu 
 # HELP avm_essk_calculations_devices_to_process 
@@ -67,6 +49,29 @@ avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK
 avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.75"} 79
 avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.95"} 191
 avm_essk_calculations_one_device_process_time{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.99"} 29469
+
+
+
+# HELP application_httprequests_apdex 
+# TYPE application_httprequests_apdex gauge
+application_httprequests_apdex{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 1
+
+# HELP application_httprequests_active 
+# TYPE application_httprequests_active counter
+application_httprequests_active{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 1
+
+
+// jak szybko wykonywane są zapytania o metryki
+# HELP application_httprequests_transactions 
+# TYPE application_httprequests_transactions summary
+application_httprequests_transactions_sum{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 7.9814191
+application_httprequests_transactions_count{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development"} 10780
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.5"} 0.0002772
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.75"} 0.0006979
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.95"} 0.0008623999999999999
+application_httprequests_transactions{server="JWOJCIKPC01",app="Avm.ESSK.Calculations",env="development",quantile="0.99"} 0.0008623999999999999
+
+
 
 
 avm_essk_calculations_one_device_process_time_sum/avm_essk_calculations_one_device_process_time_count = średni czas na urządzenie

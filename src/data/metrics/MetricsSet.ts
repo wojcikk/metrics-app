@@ -1,6 +1,6 @@
 class MetricsSet { 
+    private _id!: number;
     private _variableName!: string; 
-    
     private _calculationResults!: {
         result_for_50: number;
         result_for_75: number;
@@ -8,11 +8,12 @@ class MetricsSet {
         result_for_99: number;
     };
 
-    // public constructor (variableName: string, calculationResults: []) {
-    //     this._variableName = variableName;
-    //     this._calculationResults = calculationResults;
-    // }
-
+    public get id(): number {
+        return this._id;
+    }
+    public set id(value: number) {
+        this._id = value;
+    }
 
     public get variableName(): string {
         return this._variableName;

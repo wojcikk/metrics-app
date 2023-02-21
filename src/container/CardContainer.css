@@ -1,36 +1,62 @@
-* {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .metrics-container {
-    background-color: rgb(5, 5, 5);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.metrics-type-container {
+    border: 1px solid rgb(194, 194, 194);
+    margin: 10px;
+    border-radius: 3px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
+    flex: 1 1 0;
 }
 
 .card {
-    color: white;
-    margin: 10px 30px;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 10px;
 
-    background-color: rgb(8, 8, 8);
+    font-size: 18px;
 
-    border-radius: 10px;
+    background-color: white;
+
+    border-radius: 3px;
+
+    border: 1px solid rgb(236, 236, 236);
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    flex: 1 1 0;
+    
 }
 
-h4, p {
-    background-color: rgb(8, 8, 8);
-    margin: 20px 40px;
+.variable-name-field, .result-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .metrics-label {
-    color: white;
-    margin: 10px 30px -20px 30px;
-    padding: 10px;
+    color: rgb(0, 0, 0);
     text-align: center;
+
+
+    font-size: 18px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
