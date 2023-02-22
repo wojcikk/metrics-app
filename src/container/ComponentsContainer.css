@@ -2,6 +2,12 @@
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
@@ -47,6 +53,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.variable-name-field {
+    padding: 30px 10px 0px 10px;
+    
+}
+
+.result-field {
+    padding: 0px 10px 30px 10px;
+}
+
+.histogram-result-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px 30px 10px;
 }
 
 .metrics-label {

@@ -1,0 +1,20 @@
+{
+    "arr": [
+        {
+            "result_for":"50",
+            "result":"50"
+        },
+        {
+            "result_for":"75",
+            "result":"75"
+        },
+        {
+            "result_for":"95",
+            "result":"90"
+        },
+        {
+            "result_for":"99",
+            "result":"99"
+        }
+    ]
+}

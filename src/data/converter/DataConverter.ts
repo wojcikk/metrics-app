@@ -11,7 +11,6 @@ class DataConverter {
 
         dataArray = this.filterStringArray(dataArray)
         
-
         return dataArray
     }
 

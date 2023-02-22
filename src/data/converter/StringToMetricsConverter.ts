@@ -38,8 +38,6 @@ class StringToMetricsConverter {
 
         metrics.queryConfigMetrics = this.assignQueryConfigMetric(array[0]);
 
-        console.log(metrics)
-
         return metrics;
     }
 

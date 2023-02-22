@@ -6,30 +6,21 @@ import './index.css';
 
 
 import reportWebVitals from './reportWebVitals';
-import ResultCard from './card/ResultCard';
-import CardContainer from './container/CardContainer';
+import CardContainer from './container/ComponentsContainer';
+import { Header } from './components/Header';
+
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <HelloWorld /> */}
-
+    <Header />
     <CardContainer />
-    
-
-    {/* <ResultCard 
-    id= {0}
-    variableName= {"pierwsze"}
-    fullVariablePath= {"pierwsze"}
-    calculationResult= {1}
-     /> */}
-
-     {/* <PlainData /> */}
+    <App />
   </React.StrictMode>
 );
 
