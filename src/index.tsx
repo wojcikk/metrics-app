@@ -20,7 +20,7 @@ root.render(
   <React.StrictMode>
     <Header />
     <CardContainer />
-    <App />
+    {/* <App /> */}
   </React.StrictMode>
 );
 

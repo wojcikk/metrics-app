@@ -3,6 +3,7 @@ import { Console } from "console";
 import { useState } from "react";
 import { useEffect } from "react";
 
+
 const DataFetch = function() {
 
     let [data, setData] = useState('');

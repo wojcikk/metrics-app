@@ -1,6 +1,6 @@
 export const Card = (props: {
     variableName: string
-    calculationResult: string
+    calculationResult: string | undefined
     unit: string
 }) => {
     return(
