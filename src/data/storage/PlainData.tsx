@@ -15,11 +15,10 @@ import DataStore from "./DataStore";
 const converter = new DataConverter();
 const metricsConverter = new StringToMetricsConverter();
 
-const dataStore = new DataStore
+
 
 function PlainData() {
-
-    //var data = DataFetch();
+    const dataStore = new DataStore
     
     var filtered = converter.filterData(dataStore.data);
     

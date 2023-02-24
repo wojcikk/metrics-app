@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 
 .container {
     display: flex;
@@ -22,7 +17,6 @@
     border: 1px solid rgb(194, 194, 194);
     margin: 10px;
     border-radius: 3px;
-    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,14 +45,11 @@
 
 .variable-name-field, .result-field {
     display: flex;
-    align-items: center;
     justify-content: center;
-
 }
 
 .variable-name-field {
     padding: 30px 10px 0px 10px;
-    
 }
 
 .result-field {
@@ -67,20 +58,37 @@
 
 .histogram-result-field {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 10px 30px 10px;
 }
 
 .metrics-label {
-    color: rgb(0, 0, 0);
-    text-align: center;
 
+    margin-top: 10px;
 
     font-size: 18px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.search-input {
+    margin: 10px;
+
+    font-size: 18px;
+
+    background-color: white;
+
+    border-radius: 3px;
+
+    border: 1px solid rgb(236, 236, 236);
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+   
 }

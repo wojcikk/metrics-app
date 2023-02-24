@@ -50,8 +50,6 @@ export const HistogramChart = ( props: {
         },
       ],
     }
-
-    console.log(histogramData)
   
     return (
         <div className='chart-container'>
